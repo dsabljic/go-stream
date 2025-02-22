@@ -1,3 +1,3 @@
-module github.com/dsabljic/stream
+module github.com/dsabljic/go-stream
 
 go 1.23.4
