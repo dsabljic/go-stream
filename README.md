@@ -15,7 +15,7 @@ Package se može koristiti i isprobati na dva načina.
 U vlastitom Golang projektu/modulu pokrenuti sljedeću komandu:
 
 ```zsh
-go get github.com/dsabljic/go-stream
+go get -u github.com/dsabljic/go-stream
 ```
 
 Zatim uvezite package sa sljedećim `import` statementom.
