@@ -8,7 +8,7 @@ Jednostavni go package za map, reduce, filter i pipe operacije.
 
 ## Upute za korištenje
 
-Package se može koristiti i isprobati na dva načina.
+Package se može koristiti/isprobati na dva načina.
 
 ### Prvi način - `go get`
 
@@ -37,7 +37,7 @@ doubledA := Map(a, func(el, index int, array []int) int {
 })
 ```
 
-Svi ostali primjeri su dostupni u `main.go` datoteci.
+Svi ostali primjeri su dostupni u [`main.go`](https://gist.github.com/dsabljic/388dfcb92b7dae0e66f1a9c0f21bbdc0) gist-u.
 
 ### Drugi način
 
@@ -49,16 +49,10 @@ cd go-stream
 # go mod tidy # nepotrebno jer se koristi samo std lib
 ```
 
-Zatim pokrenite primjere sa:
-
-```bash
-go run .
-```
-
 Nakon toga možete pokrenuti:
 
 ```bash
-make prep
+make cover
 ```
 
 te otvoriti `coverage.html` u browseru kako bi vidjeli pokrivenost testovima, te možete i pokrenuti unit testove sa:
