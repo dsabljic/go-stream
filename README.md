@@ -60,3 +60,9 @@ te otvoriti `coverage.html` u browseru kako bi vidjeli pokrivenost testovima, te
 ```bash
 go test ./... # ili go test -v ./... za detaljniji pregled
 ```
+
+Ukoliko iz nekog razloga želite izbaciti report za određene datoteke, trebate dodati zapis u `exclude.txt` datoteku u sljedećem obliku:
+
+```
+github.com/dsabljic/go-stream/[filename].[extension]
+```
