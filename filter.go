@@ -1,4 +1,4 @@
-package main
+package stream
 
 func Filter[T any](array []T, fn func(T) bool) []T {
 	result := make([]T, 0)

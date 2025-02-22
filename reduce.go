@@ -1,4 +1,4 @@
-package main
+package stream
 
 func Reduce[T any](array []T, fn func(T, T) T, initVal T) T {
 	result := initVal

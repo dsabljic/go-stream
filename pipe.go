@@ -1,20 +1,9 @@
-package main
+package stream
 
 import (
 	"fmt"
 	"reflect"
 )
-
-// func Pipe[T any](fns ...func(T) T) func(T) T {
-// 	return func(x T) T {
-// 		result := x
-// 		for _, fn := range fns {
-// 			result = fn(result)
-// 		}
-
-// 		return result
-// 	}
-// }
 
 func Pipe(fns ...interface{}) func(args ...interface{}) []interface{} {
 	if len(fns) == 0 {

@@ -1,4 +1,4 @@
-package main
+package stream
 
 func Map[T, U any](array []T, fn func(T, int, []T) U) []U {
 	result := make([]U, len(array))
